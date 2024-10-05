@@ -17,12 +17,19 @@ bb8 = "0.8.1"
 bigdecimal = "0.3.1"
 pg_bigdecimal = "0.1.5"
 chrono = { version = "0.4.31", features = ["serde"] }
-postgres = "0.19.7"
+postgres = { version = "0.19.7", features = ["with-chrono-0_4"] }
 num-traits = "0.2"
 tungstenite = "0.15.0"
 tokio-tungstenite = "0.15"
-futures-util = "0.3.17"
+core-graphics = "0.24.0"
 
 lazy_static = "1.4"
 
 tokio-websockets = { version = "0.5.0", features = ["client", "fastrand", "server", "sha1_smol"] }
+local-ip-address = "0.4"
+
+
+futures-channel = { version = "0.3", features = ["sink"] }
+futures-util = { version = "0.3", features = ["sink"] }
+
+dotenv = "0.15"
